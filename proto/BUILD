@@ -1,3 +1,12 @@
+package(default_visibility = ["//visibility:public"])
+
+cc_proto_library(
+    name = "lgsvl_msgs_proto",
+    deps = [
+        ":lgsvl_lib",
+    ],
+)
+
 proto_library(
     name = "lgsvl_lib",
     srcs = [
